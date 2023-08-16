@@ -1,386 +1,524 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Gilda+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: inter;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Gilda+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(205, 158, 80);
+  background: rgb(205, 158, 80);
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(132, 100, 49);
+  background: rgb(132, 100, 49);
 }
-.main-nav{
-    width: 100%;
+.main-nav {
+  width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+  background-color: #141414;
+}
+.bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0a0a0a;
+}
+.top-nav {
+  width: 60%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0a0a;
+  color: white;
+}
+.top-nav-left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.top-nav-left p {
+  font-family: "Barlow";
+  font-size: 0.9em;
+}
+.top-nav-left div {
+  padding-left: 1em;
+  border-left: 0.5px solid rgb(67, 67, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.top-nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+}
+.top-nav-right a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(205, 158, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.25s;
+}
+
+.top-nav-right a:hover {
+  color: rgb(205, 158, 80);
+  background-color: white;
+}
+.bottom-nav {
+  padding: 20px 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.bottom-nav img {
+  width: 200px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+.bottom-nav .nav li:last-child a {
+  background-color: transparent;
+  border: 2px solid rgb(205, 158, 80);
+  transition: 0.3s;
+  padding: 15px 30px;
+}
+.bottom-nav .nav li:last-child a:hover {
+  background-color: white;
+}
+.bottom-nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+.bottom-nav ul li a:hover {
+  color: rgb(205, 158, 80);
+}
+#logo2 {
+  color: white;
+  font-size: 2em;
+  font-family: "Gilda Display";
+  font-weight: 500;
+  display: none;
+}
+#bars {
+  color: white;
+  font-size: 2em;
+  display: none;
+}
+.hero {
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.main-hero {
+  color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.main-hero p:nth-child(1) {
+  font-family: "Gilda Display";
+  font-size: 4.375em;
+}
+.main-hero p:nth-child(2) {
+  font-family: "Barlow";
+}
+.main-hero a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05em;
+  font-family: "Gilda Display";
+  width: 8em;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 158, 80);
+  transition: 0.25s;
+}
+.main-hero a:hover {
+  background-color: white;
+  color: rgb(205, 158, 80);
+}
+.about {
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 16px;
+  background-color: #070707;
+  color: white;
+}
+.top-about {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.top-about div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.top-about div hr {
+  height: 1px;
+  width: 100px;
+  border: 1px solid rgb(205, 158, 80);
+}
+.top-about div p {
+  font-size: 3.125em;
+  font-family: "Gilda Display";
+}
+.top-about > p {
+  font-size: 1.5em;
+  font-family: "Barlow";
+  font-style: italic;
+}
+.bottom-about {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.bottom-about > div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+.bottom-about div > p:nth-child(2) {
+  font-size: 1.5em;
+  font-family: "Gilda Display";
+}
+.best-projects {
+  background-color: #0a0a0a;
+  color: white;
+  width: 100%;
+  gap: 3rem;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-best-project {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.top-best-project div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.top-best-project div hr {
+  height: 1px;
+  width: 100px;
+  border: 1px solid rgb(205, 158, 80);
+}
+.top-best-project div p {
+  font-size: 3.125em;
+  font-family: "Gilda Display";
+}
+.bottom-best-project {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.side-project {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2em;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 520px;
+  height: 380px;
+  transition: 0.25s;
+}
+.main-box:hover{
+    transform: scale(1.05);
+}
+.main-box .bg {
+  width: 100%;
+  height: 280px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.side-project:nth-child(1) .main-box:nth-child(1) .bg{
+    background-image: url("../images/project-thumb1.jpg");
+}
+.side-project:nth-child(1) .main-box:nth-child(2) .bg{
+    background-image: url("../images/project-thumb2.jpg");
+}
+.side-project:nth-child(2) .main-box:nth-child(1) .bg{
+    background-image: url("../images/project-thumb3.jpg");
+}
+.side-project:nth-child(2) .main-box:nth-child(2) .bg{
+    background-image: url("../images/project-thumb4.jpg");
+}
+.main-box .bg a {
+  text-decoration: none;
+  padding: 1.25em 3.75em;
+  font-size: 1.1em;
+  color: rgb(205, 158, 80);
+  background-color: #0a0a0a;
+  transition: 0.25s;
+  font-family: "Gilda Display";
+  border: 1px solid transparent;
+}
+.bg a:hover {
+  border: 1px solid rgb(205, 158, 80);
+}
+.main-box p {
+  color: rgb(205, 158, 80);
+}
+.main-box > a {
+  font-size: 1.375em;
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+  font-family: "Gilda Display";
+}
+.main-box > a:hover {
+  color: rgb(205, 158, 80);
+}
+@media (max-width: 1520px) {
+  .top-nav,
+  .bottom-nav,
+  .main-hero,
+  .top-about,
+  .bottom-about,
+  .top-best-project,
+  .bottom-best-project {
+    padding: 0 50px;
     width: 100%;
-    font-size: 1rem;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-   
-    background-color: #141414;
+  }
+  .top-about {
+    font-size: 13px;
+  }
 }
-.bg{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #0A0A0A;
-}
-.top-nav{
-    width: 60%;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0A0A0A;
-    color: white;
-}
-.top-nav-left{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-.top-nav-left p{
-    font-family: 'Barlow';
-    font-size: 0.9em;
-}
-.top-nav-left div{
-    padding-left: 1em;
-    border-left:0.5px solid rgb(67, 67, 67);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-}
-.top-nav-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6em;
-}
-.top-nav-right a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(205, 158, 80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1050px) {
+  nav,.bottom-best-project {
+    font-size: 14px;
+  }
+  .bottom-about {
+    font-size: 14px;
+  }
+  .bottom-nav img {
+    width: 150px;
+  }
+  .top-about {
+    font-size: 13px;
+  }
+  .top-best-project{
     text-align: center;
-    width: 30px;
-    height: 30px;
-    transition: 0.25s;
-}
-
-.top-nav-right a:hover{
-    color: rgb(205, 158, 80);
-    background-color: white;
-}
-.top-nav-left a:hover .lk{
-    display: block;
-}
-.bottom-nav{
-    padding: 20px 0;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-}
-.bottom-nav img{
-    width: 200px;
-}
-.nav{
-    list-style: none;
-    display: flex;
-    gap: 2em;
-}
-.bottom-nav ul li:last-child a{
-    background-color: transparent;
-    border: 2px solid rgb(205, 158, 80);
-    transition: 0.3s;
-    padding: 15px 30px;
-}
-.bottom-nav ul li:last-child a:hover{
-    background-color: white;
-}
-.bottom-nav ul li a{
-    text-decoration: none;
-    color: white;
-    transition: 0.25s;
-}
-.bottom-nav ul li a:hover{
-    color: rgb(205, 158, 80);
-}
-#logo2{
-    color: white;
-    font-size: 2em;
-    font-family: 'Gilda Display';
-    font-weight: 500;
-    display: none;
-}
-#bars{
-    color: white;
-    font-size: 2em;
-    display: none;
-}
-.hero{
-    width: 100%;
-    height: 800px;
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-}
-.main-hero{
-    color: white;
-    width: 60%;
-    display: flex;
+  }
+  .top-best-project div{
     flex-direction: column;
-    gap: 2.5em;
-}
-.main-hero p:nth-child(1){
-    font-family: 'Gilda Display';
-    font-size: 4.375em;
-}
-.main-hero p:nth-child(2){
-    font-family: 'Barlow'; 
-}
-.main-hero a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.05em;
-    font-family: 'Gilda Display';
-    width: 8em;
-    height: 3.5em;
-    display: flex;
+  }
+  .side-project{
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .top-nav,
+  .bottom-nav,
+  .main-hero,
+  .top-about,
+  .bottom-about,
+  .top-best-project,
+  .bottom-best-project{
+    padding: 0 20px;
+    width: 100%;
+  }
+  nav,
+  .hero,
+  .top-about,.top-best-project {
+    font-size: 13px;
+  }
+  .bottom-about div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-nav img {
+    width: 130px;
+  }
+}
+@media (max-width: 785px) {
+  .main-hero p:nth-child(1) {
+    font-size: 4em;
+  }
+  .top-nav,
+  .bottom-nav {
+    padding: 0 20px;
+    width: 100%;
+  }
+  nav,
+  .hero {
+    font-size: 13px;
+    z-index: 1;
+  }
+  .nav {
+    z-index: -1;
+    position: absolute;
+    flex-direction: column;
+    background-color: #141414;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0%;
+    padding: 50px 0;
+    top: -500px;
+    transition: 0.8s;
+  }
+  .clicked {
+    top: 100%;
+  }
+  .bottom-nav {
+    height: 50px;
     background-color: rgb(205, 158, 80);
-    transition: 0.25s;
-}
-.main-hero a:hover{
-    background-color: white;
-    color: rgb(205, 158, 80);
-}
-.about{
-    width: 100%;
-    padding: 50px 20px;
-    display: flex;
+  }
+  .bottom-nav img {
+    display: none;
+  }
+  .top-nav {
+    display: none;
+  }
+  #logo2 {
+    display: block;
+    font-weight: 700;
+  }
+  #bars {
+    display: block;
+  }
+  .top-about > p {
+    font-size: 1.2em;
+  }
+  .bottom-about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    font-size: 16px;
-    background-color: #070707;
-    color: white;
+  }
 }
-.top-about{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+@media (max-width: 600px){
+    .main-box{
+        width: 100%;
+    }
+    .main-box .bg a{
+        padding: 1em 2.5em;
+    }
 }
-.top-about div{
-    display: flex;
-    align-items: center;
-    gap: 1em;
+@media (max-width: 480px) {
+  .main-hero p:nth-child(1) {
+    font-size: 2.5em;
+  }
+  .hero {
+    height: 600px;
+  }
 }
-.top-about div hr{
-    height: 1px;
-    width: 100px;
-    border: 1px solid rgb(205, 158, 80);
-}
-.top-about div p{
-    font-size: 3.125em;
-    font-family: 'Gilda Display';
-}
-.top-about > p{
+@media (max-width: 400px) {
+  #logo2 {
     font-size: 1.5em;
-    font-family: 'Barlow';
-    font-style: italic;
-}
-.bottom-about{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+  }
+  #bars {
+    font-size: 1.5em;
+  }
+  .about {
     gap: 2em;
-}
-.bottom-about > div{
-    width: 300px;
-    display: flex;
+  }
+  .top-about div {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1em;
-}
-.bottom-about div > p:nth-child(2){
-    font-size: 1.5em;
-    font-family: 'Gilda Display';
-}
-@media(max-width: 1460px){
-    .top-nav,.bottom-nav,.main-hero,.top-about,.bottom-about{
-        padding: 0 50px;
-        width: 100%;
-    }
-    .top-about{
-        font-size: 13px;
-    }
-}
-@media(max-width: 1050px){
-    nav{
-        font-size: 14px;
-    }
-    .bottom-about{
-        font-size: 14px;
-    }
-    .bottom-nav img{
-        width: 150px;
-    }
-    .top-about{
-        font-size: 13px;
-    }
-}
-@media(max-width: 900px){
-    .top-nav,.bottom-nav,.main-hero,.top-about,.bottom-about{
-        padding: 0 20px;
-        width: 100%;
-    }
-    nav,.hero,.top-about{
-        font-size: 13px;
-    }
-    .bottom-about div{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .bottom-nav img{
-        width: 130px;
-    }
-
-}
-@media(max-width: 785px){
-    .main-hero p:nth-child(1){
-        font-size: 4em;
-    }
-    .top-nav,.bottom-nav{
-        padding: 0 20px;
-        width: 100%;
-    }
-    nav,.hero{
-        font-size: 13px;
-        z-index: 1;
-    }
-    .nav{
-        z-index: -1;
-        position: absolute;
-        flex-direction: column;
-        background-color: #141414;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        left: 0%;
-        padding: 50px 0;
-        top: -500px;
-        transition: 0.8s;
-    }
-    .clicked{
-        top: 100%;
-    }
-    .bottom-nav{
-        height: 50px;
-        background-color: rgb(205, 158, 80);
-    }
-    .bottom-nav img{
-        display: none;
-    }
-    .top-nav{
-        display: none;
-    }
-    #logo2{
-        display: block;
-        font-weight: 700;
-    }
-    #bars{
-        display: block;
-    }
-    .top-about > p{
-        font-size: 1.2em;
-    }
-    .bottom-about{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width: 480px){
-    .main-hero p:nth-child(1){
-        font-size: 2.5em;
-    }
-    .hero{
-        height: 600px;
-    }
-}
-@media (max-width: 400px){
-    #logo2{
-        font-size: 1.5em;
-    }
-    #bars{
-        font-size: 1.5em;
-    }
-    .about{
-        gap: 2em;
-    }
-    .top-about div{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .top-about{
-        text-align: center;
-    }
-    .top-about div p{
-        font-size: 2.3em;
-    }
-    .top-about > p{
-        font-size: 0.9em;
-    }
-    .bottom-about div{
-        width: 100%;
-    }
-    .bottom-about div p{
-        font-size: 0.9em;
-    }
-    .main-hero{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+    align-items: center;
+  }
+  .top-about {
+    text-align: center;
+  }
+  .top-about div p {
+    font-size: 2.3em;
+  }
+  .top-about > p {
+    font-size: 0.9em;
+  }
+  .bottom-about div {
+    width: 100%;
+  }
+  .bottom-about div p {
+    font-size: 0.9em;
+  }
+  .main-hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-best-project,.bottom-best-project{
+    font-size: 10px;
+  }
 }
