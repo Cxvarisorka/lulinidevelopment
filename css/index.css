@@ -116,15 +116,7 @@ nav {
   display: flex;
   gap: 2em;
 }
-.bottom-nav .nav li:last-child a {
-  background-color: transparent;
-  border: 2px solid rgb(205, 158, 80);
-  transition: 0.3s;
-  padding: 15px 30px;
-}
-.bottom-nav .nav li:last-child a:hover {
-  background-color: white;
-}
+
 .bottom-nav ul li a {
   text-decoration: none;
   color: white;
@@ -342,6 +334,98 @@ nav {
 .main-box > a:hover {
   color: rgb(205, 158, 80);
 }
+.world-project{
+  background-color: #070707;
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.world-project-main{
+  color: white;
+  width: 60%;
+  display: flex;
+  gap: 3em;
+}
+.world-project-main > div{
+  width: 50%;
+}
+.top-world-project{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.top-world-project div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.top-world-project div hr {
+  height: 1px;
+  width: 100px;
+  border: 1px solid rgb(205, 158, 80);
+}
+.top-world-project div p {
+  font-size: 3.125em;
+  font-family: "Gilda Display";
+}
+.bottom-world-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-world-project > p{
+  font-size: 0.95em;
+  color: gray;
+}
+.bottom-world-project > div{
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.bottom-world-project > div div{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.bottom-world-project > div div p:nth-child(1){
+  font-size: 1.2em;
+}
+.bottom-world-project > div div p:nth-child(2){
+  font-size: 3.75em;
+  color: rgb(205, 158, 80);
+}
+.bottom-world-project > a{
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(205, 158, 80);
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  transition: 0.25s;
+}
+.bottom-world-project > a:hover{
+  background-color: rgb(205, 158, 80);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1520px) {
   .top-nav,
   .bottom-nav,
@@ -349,7 +433,8 @@ nav {
   .top-about,
   .bottom-about,
   .top-best-project,
-  .bottom-best-project {
+  .bottom-best-project,
+  .world-project-main{
     padding: 0 50px;
     width: 100%;
   }
@@ -358,7 +443,7 @@ nav {
   }
 }
 @media (max-width: 1050px) {
-  nav,.bottom-best-project {
+  nav,.bottom-best-project,.world-project{
     font-size: 14px;
   }
   .bottom-about {
@@ -374,6 +459,26 @@ nav {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  .world-project-main{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottom-world-project{
+    gap: 2em;
+  }
+  .world-project-main > div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .top-world-project > div{
+    flex-direction: column;
+  }
+  .top-world-project img{
+    width: 500px;
   }
   .top-best-project div{
     flex-direction: column;
@@ -391,13 +496,14 @@ nav {
   .top-about,
   .bottom-about,
   .top-best-project,
-  .bottom-best-project{
+  .bottom-best-project,
+  .world-project-main{
     padding: 0 20px;
     width: 100%;
   }
   nav,
   .hero,
-  .top-about,.top-best-project {
+  .top-about,.top-best-project,.world-project{
     font-size: 13px;
   }
   .bottom-about div {
@@ -410,6 +516,9 @@ nav {
   }
 }
 @media (max-width: 785px) {
+  .top-world-project img{
+    width: 100%;
+  }
   .main-hero p:nth-child(1) {
     font-size: 4em;
   }
@@ -474,6 +583,9 @@ nav {
     .main-box .bg a{
         padding: 1em 2.5em;
     }
+    .bottom-world-project > div{
+      flex-direction: column;
+    }
 }
 @media (max-width: 480px) {
   .main-hero p:nth-child(1) {
@@ -501,7 +613,7 @@ nav {
   .top-about {
     text-align: center;
   }
-  .top-about div p {
+  .top-about div p, .top-world-project div p{
     font-size: 2.3em;
   }
   .top-about > p {
