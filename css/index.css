@@ -697,6 +697,9 @@ nav {
   }
 }
 @media (max-width: 400px) {
+  .about,.best-projects,.world-project,.questions{
+    padding: 50px 20px;
+  }
   #logo2 {
     font-size: 1.5em;
   }
