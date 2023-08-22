@@ -194,4 +194,9 @@
         font-size: 11px;
     }
 }
+@media(max-width: 600px){
+    .main-box{
+        width: 100%;
+    }
+}
 
