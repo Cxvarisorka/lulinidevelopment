@@ -1,0 +1,197 @@
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bridcumb-fotor-20230822185136.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 1em;
+}
+.hero p:nth-child(1){
+    font-size: 3.75em;
+    font-weight: 600;
+    font-family: 'Gilda Display';
+}
+.hero p:nth-child(2){
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 500;
+    display: flex;
+    gap: 0.5em;
+}
+.hero p:nth-child(2) a, .hero p:nth-child(2) span{
+    color: white;
+    font-family: 'Barlow';
+}
+.best-projects {
+    background-color: #0a0a0a;
+    color: white;
+    width: 100%;
+    gap: 3rem;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-best-project {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-best-project div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .top-best-project div hr {
+    height: 1px;
+    width: 100px;
+    border: 1px solid rgb(205, 158, 80);
+  }
+  .top-best-project div p {
+    font-size: 3.125em;
+    font-family: "Gilda Display";
+  }
+  .bottom-best-project {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .side-project {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2em;
+  }
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 550px;
+    height: 380px;
+    transition: 0.25s;
+  }
+  .main-box:hover{
+      transform: scale(1.05);
+  }
+  .main-box .bg {
+    width: 100%;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .side-project:nth-child(1) .main-box:nth-child(1) .bg{
+      background-image: url("../images/project-thumb1.jpg");
+  }
+  .side-project:nth-child(1) .main-box:nth-child(2) .bg{
+      background-image: url("../images/project-thumb2.jpg");
+  }
+  .side-project:nth-child(2) .main-box:nth-child(1) .bg{
+      background-image: url("../images/project-thumb3.jpg");
+  }
+  .side-project:nth-child(2) .main-box:nth-child(2) .bg{
+      background-image: url("../images/project-thumb4.jpg");
+  }
+  .main-box .bg a {
+    text-decoration: none;
+    padding: 1.25em 3.75em;
+    font-size: 1.1em;
+    color: rgb(205, 158, 80);
+    background-color: #0a0a0a;
+    transition: 0.25s;
+    font-family: "Gilda Display";
+    border: 1px solid transparent;
+  }
+  .bg a:hover {
+    border: 1px solid rgb(205, 158, 80);
+  }
+  .main-box p {
+    color: rgb(205, 158, 80);
+  }
+  .main-box > a {
+    font-size: 1.375em;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+    font-family: "Gilda Display";
+  }
+  .main-box > a:hover {
+    color: rgb(205, 158, 80);
+  }  
+
+
+
+  @media (max-width: 1520px) {
+    .top-best-project,
+    .bottom-best-project{
+      padding: 0 50px;
+      width: 100%;
+    }
+    
+  }
+  @media (max-width: 1050px) {
+    .bottom-best-project{
+      font-size: 14px;
+    }
+    .top-best-project{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-best-project div{
+      flex-direction: column;
+    }
+    .side-project{
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 900px) {
+    .top-best-project,
+    .bottom-best-project{
+      padding: 0 20px;
+      width: 100%;
+    }
+    .top-best-project{
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 400px) {
+    .best-projects{
+      padding: 50px 20px;
+    }
+    .top-best-project,.bottom-best-project{
+      font-size: 12px;
+    }
+  }
+  
+
+@media(max-width: 1050px){
+    .hero{
+        font-size: 14px;
+    }
+}
+@media(max-width: 900px){
+    .hero{
+        font-size: 13px;
+    }
+}
+@media(max-width: 400px){
+    .hero{
+        font-size: 11px;
+    }
+}
+

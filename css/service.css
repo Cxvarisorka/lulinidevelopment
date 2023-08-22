@@ -1,0 +1,146 @@
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bridcumb-fotor-20230822185136.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 1em;
+}
+.hero p:nth-child(1){
+    font-size: 3.75em;
+    font-weight: 600;
+    font-family: 'Gilda Display';
+}
+.hero p:nth-child(2){
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 500;
+    display: flex;
+    gap: 0.5em;
+}
+.hero p:nth-child(2) a, .hero p:nth-child(2) span{
+    color: white;
+    font-family: 'Barlow';
+}
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #0A0A0A;
+}
+.main-services{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.main-services > div{
+    display: flex;
+    gap: 2em;
+}
+.main-services > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #393939;
+    color: white;
+    width: 440px;
+    height: 310px;
+    padding: 0 30px;
+}
+.main-services > div > div > p:nth-child(2){
+    font-size: 1.5em;
+    font-family: 'Gilda Display';
+}
+.main-services > div > div > p:nth-child(3){
+    color: #dcdcdc;
+    font-family: 'Barlow';
+    line-height: 1.4em;
+}
+.main-services > div > div > a{
+    color: #CD9E50;
+    text-decoration: none;
+    background-color: #0A0A0A;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.25s;
+}
+.main-services > div > div > a:hover{
+    background-color: #CD9E50;
+    color: white;
+}
+
+
+
+
+
+@media(max-width: 1520px){
+    .services{
+        font-size: 15px;
+    }
+    .main-services{
+        width: 100%;
+    }
+    .main-services > div{
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1050px){
+    .hero{
+        font-size: 14px;
+    }
+    .services{
+        font-size: 13px;
+    }
+    .main-services > div > div{
+        width: 380px;
+    }
+}
+@media(max-width:785px){
+    .main-services > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 900px){
+    .hero{
+        font-size: 13px;
+    }
+}
+@media(max-width: 440px){
+    .main-services > div > div{
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    .hero{
+        font-size: 11px;
+    }
+}
+@media(max-width: 360px){
+    .main-services > div > div > a{
+        width: 120px;
+    }
+    .main-services > div > div{
+        padding: 0 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
