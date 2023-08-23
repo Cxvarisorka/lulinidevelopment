@@ -1,0 +1,258 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bridcumb-fotor-20230822185136.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 1em;
+}
+.hero p:nth-child(1){
+    font-size: 3.75em;
+    font-weight: 600;
+    font-family: 'Gilda Display';
+}
+.hero p:nth-child(2){
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 500;
+    display: flex;
+    gap: 0.5em;
+}
+.hero p:nth-child(2) a, .hero p:nth-child(2) span{
+    color: white;
+    font-family: 'Barlow';
+}
+@media(max-width: 1520px){
+    .services{
+        font-size: 15px;
+    }
+    .main-services{
+        width: 100%;
+    }
+    .main-services > div{
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1050px){
+    .hero{
+        font-size: 14px;
+    }
+    .services{
+        font-size: 13px;
+    }
+    .main-services > div > div{
+        width: 380px;
+    }
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #0A0A0A;
+    color: white;
+}
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.top-contact{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.top-contact p:nth-child(1){
+    font-size: 3.75em;
+    font-family: "Gilda Display";
+}
+.top-contact p:nth-child(2){
+    font-size: 1.5em;
+    font-family: 'Barlow';
+    font-style: italic;
+}
+.bottom-contact{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    gap: 2em;
+}
+.bottom-contact-left{
+    width: 40%;
+}
+.bottom-contact-left iframe{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.bottom-contact-right{
+    background-color: #070707;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 30px;
+}
+.bottom-contact-right > p{
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Gilda Display";
+}
+.bottom-contact-right > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+.bottom-contact-right > div div{
+    display: flex;
+    gap: 1em;
+}
+.bottom-contact-right input{
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 15px;
+    font-size: 1.02em;
+    color: white;
+    font-family: "Gilda Display";
+}
+.bottom-contact-right textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 15px;
+    font-size: 1.02em;
+    color: white;
+    font-family: "Gilda Display";
+}
+.bottom-contact-right button{
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    font-size: 1.02em;
+    color: white;
+    background-color: #CD9E50;
+    border: 1px solid #CD9E50;
+    font-family: 'Barlow';
+    cursor: pointer;
+    transition: 0.25s;
+}
+.bottom-contact-right button:hover{
+    background-color: white;
+    color: #CD9E50;
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+
+@media(max-width: 1520px){
+    form{
+        width: 100%;
+    }
+    .contact{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1300px){
+    .bottom-contact-left{
+        width: 50%;
+    }
+    .bottom-contact-right{
+        width: 50%;
+    }
+}
+@media (max-width: 1050px){
+    .contact{
+        font-size: 13px;
+    }
+    .bottom-contact{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-contact > div{
+        width: 80%;
+    }
+    .bottom-contact-right{
+        padding: 30px;
+        gap: 2em;
+    }
+}
+@media(max-width: 900px){
+    .hero{
+        font-size: 13px;
+    }
+    .contact{
+        font-size: 12px;
+    }
+}
+@media(max-width: 500px){
+    .bottom-contact > div{
+        width: 100%;
+    }
+    .top-contact{
+        font-size: 10px;
+    }
+}
+@media(max-width: 400px){
+    .top-contact{
+        font-size: 9px;
+    }
+    .hero{
+        font-size: 11px;
+    }
+}
+@media(max-width: 380px){
+    .top-contact{
+        font-size: 8px;
+    }
+    .bottom-contact-right > button{
+        width: 100%;
+    }
+}
+@media(max-width: 360px){
+    .top-contact{
+        font-size: 8px;
+    }
+
+    .bottom-contact-right > div div{
+        flex-direction: column;
+        width: 100%;
+    }
+    .bottom-contact-right > div div input{
+        width: 100%;
+    }
+}
