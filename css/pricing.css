@@ -1,0 +1,218 @@
+ul,ol{
+    list-style-type: none;
+}
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bridcumb-fotor-20230822185136.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 1em;
+}
+.hero p:nth-child(1){
+    font-size: 3.75em;
+    font-weight: 600;
+    font-family: 'Gilda Display';
+}
+.hero p:nth-child(2){
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 500;
+    display: flex;
+    gap: 0.5em;
+}
+.hero p:nth-child(2) a, .hero p:nth-child(2) span{
+    color: white;
+    font-family: 'Barlow';
+}
+@media(max-width: 1520px){
+    .services{
+        font-size: 15px;
+    }
+    .main-services{
+        width: 100%;
+    }
+    .main-services > div{
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1050px){
+    .hero{
+        font-size: 14px;
+    }
+    .services{
+        font-size: 13px;
+    }
+    .main-services > div > div{
+        width: 380px;
+    }
+}
+.prices{
+    background-color: #070707;
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-prices{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: white;
+    width: 410px;
+    height: 520px;
+    background-color: #010101;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ps-price{
+    bottom: 96%;
+    position: absolute;
+    background-color: #C49A56;
+    padding: 0.5em 1em;
+}
+.price > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.price > div p:nth-child(1){
+    font-size: 1.56em;
+    font-weight: 700;
+    font-family: 'Gilda Display';
+}
+.price > div p:nth-child(2){
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #C49A56;
+    font-family: 'Gilda Display';
+}
+.price > div p:nth-child(2) span{
+    font-size: 1em;
+    font-family: 'Gilda Display';
+    color: #C49A56;
+}
+.price ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.price ul li:first-child{
+    width: 100%;
+    padding: 1em 0;
+    border-top: 1px solid rgb(43, 43, 43);
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+.price ul li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    font-family: 'Barlow';
+    color: gray;
+    width: 100%;
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+.price ul li i{
+    color: #C49A56;
+    font-size: 1.3em;
+}
+.price > a{
+    font-family: 'Barlow';
+    position: relative;
+    color: #C49A56;
+    border: 1px solid #C49A56;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    z-index: 1;
+    transition: 0.25s;
+}
+.price > a i{
+    font-size: 0.9em;
+}
+.price > a::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #C49A56;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    transition: 0.25s;
+}
+.price > a:hover::before{
+    right: 0;
+}
+.price > a:hover{
+    color: white;
+}
+.price:nth-child(2) > a{
+    background-color: #C49A56;
+    color: white;
+}
+
+@media(max-width: 1520px){
+    .prices{
+        padding: 50px 50px;
+    }
+    .main-prices{
+        width: 100%;
+    }
+}
+@media(max-width: 1050px){
+    .prices{
+        font-size: 14px;
+    }
+    .price{
+        width: 380px;
+    }
+}
+@media(max-width: 900px){
+    .prices{
+        font-size: 13px;
+        padding: 50px 20px;
+    }
+    .price{
+        width: 300px;
+    }
+}
+@media(max-width: 785px){
+    .prices{
+        font-size: 13px;
+    }
+    .price{
+        width: 80%;
+    }
+    .main-prices{
+        flex-direction: column;
+        gap: 3em;
+    }
+}
+@media (max-width: 380px){
+    .price{
+        width: 100%;
+    }
+}
