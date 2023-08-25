@@ -1,0 +1,201 @@
+.hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/bridcumb-fotor-20230822185136.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 1em;
+}
+.hero p:nth-child(1){
+    font-size: 3.75em;
+    font-weight: 600;
+    font-family: 'Gilda Display';
+}
+.hero p:nth-child(2){
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 500;
+    display: flex;
+    gap: 0.5em;
+}
+.hero p:nth-child(2) a, .hero p:nth-child(2) span{
+    color: white;
+    font-family: 'Barlow';
+}
+@media(max-width: 1520px){
+    .services{
+        font-size: 15px;
+    }
+    .main-services{
+        width: 100%;
+    }
+    .main-services > div{
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1050px){
+    .hero{
+        font-size: 14px;
+    }
+    .services{
+        font-size: 13px;
+    }
+    .main-services > div > div{
+        width: 380px;
+    }
+}
+.team{
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+}
+.main-team{
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.main-team > div{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+.profiles{
+    width: 450px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.bg-profiles{
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.top-team .profiles:nth-child(1) .bg-profiles{
+    background-image: url('../images/team1.png');
+}
+.top-team .profiles:nth-child(2) .bg-profiles{
+    background-image: url('../images/team2.png');
+}
+.top-team .profiles:nth-child(3) .bg-profiles{
+    background-image: url('../images/team3.png');
+}
+.bottom-team .profiles:nth-child(1) .bg-profiles{
+    background-image: url('../images/team4.png');
+}
+.bottom-team .profiles:nth-child(2) .bg-profiles{
+    background-image: url('../images/team1.png');
+}
+.bottom-team .profiles:nth-child(3) .bg-profiles{
+    background-image: url('../images/team2.png');
+}
+.bg-profiles-text{
+    position: absolute;
+    bottom: -10%;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    gap: 0.5em;
+    background-color: #393939;
+    width: 50%;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+.bg-profiles-text p:first-child{
+    font-size: 1.5em;
+    font-family: 'Gilda Display'; 
+}
+.bg-profiles-text p:last-child{
+    font-family: 'Barlow';
+    color: rgb(145, 145, 145);
+    transition: 0.25s;
+}
+.profiles:hover .bg-profiles-text{
+    background-color: #CD9E50;
+}
+.profiles:hover .bg-profiles-text p:last-child{
+    color: white;
+}
+.bottom-profiles{
+    padding-top: 40px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8em;
+}
+.bottom-profiles > p{
+    font-family: 'Barlow';
+}
+.socials-profiles{
+    display: flex;
+    gap: 1em;
+}
+.socials-profiles a{
+    text-decoration: none;
+    color: #CD9E50;
+    background-color: #393939;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+.socials-profiles a:hover{
+    background-color: #CD9E50;
+    color: white;
+}
+
+@media(max-width: 1520px){
+    .main-team{
+        width: 100%;
+    }
+    .team{
+        padding: 100px 50px;
+        font-size: 14px;
+    }
+    .main-team > div{
+        justify-content: space-between;  
+    }
+}
+@media(max-width: 1050px){
+    .main-team > div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team{
+        padding: 50px 20px;
+    }
+}
+@media(max-width: 480px){
+    .profiles{
+        width: 100%;
+    }
+    .bg-profiles-text{
+        width: 80%;
+        left: 10%;
+    }
+}
